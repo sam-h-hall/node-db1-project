@@ -3,6 +3,17 @@ const db = require("../data/dbConfig.js");
 
 const router = express.Router();
 
+// router.get("/", async (req, res) => {
+//   try {
+//     const states = await db("shippers");
+//     res.status(200).json(states);
+//   } catch (err) {
+//     res.status(500).json({
+//       message: "There was a server error fulfilling your request"
+//     });
+//   };
+// });
+
 router.get("/", async (req, res) => {
   try {
     const accounts = await db("accounts");

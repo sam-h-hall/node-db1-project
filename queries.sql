@@ -13,6 +13,7 @@ FROM Suppliers
 WHERE SupplierID = 11;
 
 -- List first 10 orders placed, sorted descending by the order date
+-- should be last 10 orders placed
 
 SELECT *
 FROM Orders
@@ -50,3 +51,6 @@ SELECT COUNT (DISTINCT City)
 FROM Customers;
 
 -- (Stretch) Find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name
+SELECT *
+FROM Suppliers
+WHERE length(SupplierName) > 20;
