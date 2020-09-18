@@ -21,7 +21,7 @@ module.exports = {
       host: "localhost", // if the server is not running on your computer provide the network address
       database: "northwind", // <-- update
       user: "postgres", // <-- update
-      password: "Shall4422", // <-- update ^6wNC2DTx#xR
+      password: "Shall4422", // <-- update
     },
     pool: {
       min: 2,
